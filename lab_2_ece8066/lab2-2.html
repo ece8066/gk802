@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Αίτηση</title>
+        <meta http-equiv="Content-Type" content="text/html"; charset="windows-1253">
+    </head>
+    <body>
+
+        <form action="www.ece.upatras.gr/student-certificate" method="post">
+            <h1>Αίτηση έκδοσης πιστοποιητικού</h1>
+            <fieldset>
+                <legend>Στοιχεία φοιτητή</legend>
+                <p><em>Συμπληρώστε τα στοιχεία σας με ελληνικούς χαρακτήρες</em></p>
+                <div>
+                    <label for="name">Ονοματεπώνυμο</label><br>
+                    <input type="text" id="name" placeholder="Όνομα">
+                    <input type="text" id="surname" placeholder="Επώνυμο">
+                </div>
+                <div>
+                    <label for="address">Στοιχεία διεύθυνσης</label><br>
+                    <input type="text" id="address" placeholder="Οδός & Αριθμός"><br>
+                    <input type="text" id="city" placeholder="Πόλη">
+                    <input type="number" id="zip" maxlength="5" placeholder="Ταχυδρομικός κώδικας">
+                </div>
+                <div>
+                    <label for="contact">Στοιχεία επικοινωνίας</label><br>
+                    <input type="tel" id="tel" placeholder="Τηλέφωνο">
+                    <input type="email" id="email" placeholder="Διεύθυνση e-mail">
+                </div>
+                <div>
+                    <label for="year">Έτος φοίτησης</label><br>
+                    <input type="radio" name="year" value="a" checked>Α
+                    <input type="radio" name="year" value="b">Β
+                    <input type="radio" name="year" value="c">Γ
+                    <input type="radio" name="year" value="d">Δ
+                    <input type="radio" name="year" value="e">Ε
+                    <input type="radio" name="year" value="eplus">Ε+
+                    <input type="radio" name="year" value="postgrad">ΜΦ
+                </div>
+                <div>
+                    <label for="studentid">Αριθμός μητρώου</label><br>
+                    <input type="number" name="studentid" maxlength="9">
+                </div>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend>Επιλέξτε πιστοποιητικό και τρόπο παραλαβής</legend>
+                <div>
+                    <label for="cert">Είδος πιστοποιητικού</label><br>
+                    <select id="cert" name="cert">
+                        <option value="kartela_copy" placeholder="Φωτοτυπία καρτέλας" selected>Φωτοτυπία καρτέλας</option>
+                        <option value="points_copy">Αναλυτική καρτέλα</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Παραλαβή πιστοποιητικού</legend>
+                <div>
+                    <input type="radio" name="method" value="secretary" checked>Παραλαβή από τη γραμματεία<br>
+                    <input type="radio" name="method" value="home">Αποστολή στη διεύθυνση κατοικίας<br>
+                </div>
+                <div>
+                    <label for="date">Ημερομηνία παραλαβής</label><br>
+                    <input type="date" name="date"><br>
+                </div>
+            </fieldset>
+            <br>
+            <button submit style="background-color: whitesmoke;"> Υποβολή </button>
+        </form>
+    </body>
+</html>

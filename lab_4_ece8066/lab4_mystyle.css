@@ -1,0 +1,44 @@
+/* greek */
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/comfortaa/v37/1Pt_g8LJRfWJmhDAuUsSQamb1W0lwk4S4WjMDrAfIA9c.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+  }
+html {
+    font-family: 'Comfortaa';
+  }
+.info {
+    height: 100px;
+}
+.info .title {
+    height: 60%;
+    font-size: 200%;
+}
+.info .venue {
+    height: 40%;
+    font-size: 170%;
+    color: rgba(0 ,0 ,0,0.6);
+}
+.media {
+    background-image: url(Don_Giovanni_Act2_set_design_Prague_1790s.jpg);
+    height: 160px;
+}
+.media .title {
+    font-size: 245%;
+    color: rgba(255, 255, 255, 1);
+    line-height: 680%;
+}
+.overview .role-name {
+    height: 60%;
+    font-size: 110%;
+}
+.overview .role-name .name .role::before {
+    content: "";
+    background-color: rgb(255, 190, 0);
+    position: absolute;
+    width: 5px;
+    height: 3%;
+}

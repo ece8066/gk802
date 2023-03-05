@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Κράτηση Δωματίου</title>
+        <meta http-equiv="Content-Type" content="text/html"; charset="windows-1253">
+    </head>
+    <body>
+        <h3>ΚΡΑΤΗΣΗ ΔΩΜΑΤΙΟΥ</h3>
+        <br>
+        <form action="www.hotelrodino.gr/booking-form-confirm" method="post">
+            <p style="color:greenyellow;">ΣΤΟΙΧΕΙΑ ΠΕΛΑΤΗ</p>
+            <div>
+                <label for="name">ΟΝΟΜΑ:</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="surname">ΕΠΩΝΥΜΟ</label>
+                <input type="text" id="surname">
+            </div>
+            <div>
+                <label for="address">ΔΙΕΥΘΥΝΣΗ</label>
+                <input type="text" id="address">
+            </div>
+            <div>
+                <label for="phone">ΤΗΛΕΦΩΝΟ</label>
+                <input type="tel" id="phone">
+            </div>
+            <div>
+                <label for="fax">FAX</label>
+                <input type="tel" id="fax">
+            </div>
+            <br>
+            <div>
+                <label for="hotel" style="color: greenyellow;">ΕΠΙΛΕΞΕ ΕΝΑ ΞΕΝΟΔΟΧΕΙΟ ΑΠΟ ΤΗ ΔΙΠΛΑΝΗ ΛΙΣΤΑ: </label>
+                <select id="hotel" name="hotel">
+                    <option value="hotel1" selected>ΞΕΝΟΔΟΧΕΙΟ 1</option>
+                    <option value="hotel2">ΞΕΝΟΔΟΧΕΙΟ 2</option>
+                    <option value="hotel3">ΞΕΝΟΔΟΧΕΙΟ 3</option>
+                    <option value="hotel4">ΞΕΝΟΔΟΧΕΙΟ 4</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <p style="color:greenyellow;">ΤΥΠΟΣ ΔΩΜΑΤΙΟΥ</p>
+                <input type="radio" name="room" value="one">ΜΟΝΟΚΛΙΝΟ<br>
+                <input type="radio" name="room" value="two">ΔΙΚΛΙΝΟ<br>
+                <input type="radio" name="room" value="three">ΤΡΙΚΛΙΝΟ<br>
+            </div>
+            <div>
+                <p style="color:greenyellow;">ΕΞΟΠΛΙΣΜΟΣ ΔΩΜΑΤΙΟΥ</p>
+                <input type="checkbox" name="items" value="tv">ΤΗΛΕΟΡΑΣΗ<br>
+                <input type="checkbox" name="items" value="kitchen">ΗΛΕΚΤΡΙΚΗ ΚΟΥΖΙΝΑ<br>
+                <input type="checkbox" name="items" value="aircon">ΚΛΙΜΑΤΙΣΜΟΣ<br>
+            </div>
+            <div>
+                <fieldset>
+                    <legend></legend>
+                    <label for="arrival" style="color:greenyellow;">ΗΜΕΡΑ ΑΦΙΞΗΣ </label>
+                    <input type="datetime" size="10" id="fname" name="fname">
+                    <label for="lname" style="color:greenyellow;"> ΗΜΕΡΑ ΑΝΑΧΩΡΗΣΗΣ </label>
+                    <input type="datetime" size="10" id="lname" name="lname">
+                </fieldset>
+            </div>
+            <div>
+                <p style="color: greenyellow;">ΤΡΟΠΟΣ ΠΛΗΡΩΜΗΣ</p>
+                <input type="radio" name="payment" value="bank">ΚΑΤΑΘΕΣΗ ΣΕ ΤΡΑΠΕΖΙΚΟ ΛΟΓΑΡΙΑΣΜΟ<br>
+                <input type="radio" name="payment" value="check">ΜΕ ΤΑΧΥΔΡΟΜΙΚΗ ΕΠΙΤΑΓΗ<br>
+                <input type="radio" name="payment" value="card">ΜΕ ΠΙΣΤΩΤΙΚΗ ΚΑΡΤΑ<br>
+                <div style="text-indent: 30px;">
+                    <input type="radio" name="card" value="visa">VISA<br>
+                    <input type="radio" name="card" value="mastercard">MASTERCARD<br>
+                    <input type="radio" name="card" value="american">AMERICAN EXPRESS<br>
+                    <label for="cardnumber">ΑΡΙΘΜΟΣ ΚΑΡΤΑΣ:</label>
+                    <input type="number" id="cardnumber">
+                    <label for="carddate">ΗΜΕΡΟΜΗΝΙΑ ΛΗΞΗΣ:</label>
+                    <input type="date" id="carddate">
+                </div>
+            </div>
+            <button type="submit"> Αποστολή </button> 
+            <button type="reset"> Καθάρισμα </button> 
+        </form>
+
+    </body>
+</html>
